@@ -1,0 +1,118 @@
+/*   
+Theme Name: Terry 2K11
+Theme URI: http://terrychay.com/
+Description: The theme for the Woodwork. As usual, I always start with the default theme of WordPress, in this case, Kirby (now TwentyTen).
+Author: terry chay
+Author URI: http://terrychay.com/
+Template: twentyeleven
+Version: 0.3
+Tags: black, blue, white, two-columns, fixed-width, custom-header, theme-options
+, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-
+support
+*/
+
+@import url('../twentyeleven/style.css');
+
+/* This is in honor of my designer friends and for my friends who say they actually like reading my commentary */
+.commentary {
+/* background: #e0ffea; /* minty! */
+background: #f0fffa; /* minty! */
+}
+
+.thought {
+font-style: italic;
+}
+
+blockquote.thought {
+font-style: italic;
+}
+
+/* Flickr image. To do some offsetting.
+
+- add a css3 box shadow http://css.flepstudio.org/en/css3/box-shadow.html in the style seen in http://rolandlim.wordpress.com/ @done(2010-02-01)
+- fix the float rule
+- structure is too much work, fix that
+- You have to specify width (currently) using an internal style rule, change it to a plugin or something
+*/
+.flimg,.flimg_left,.flimg_right {
+display:block; 
+border: 1px solid #bbb;
+box-shadow: 2px 2px 2px #bbb;
+-webkit-box-shadow: 2px 2px 2px #bbb;
+-moz-box-shadow: 2px 2px 2px #bbb;
+padding: 2px;
+}
+.flimg img,.flimg_left img,.flimg_right img {
+display: block;
+margin: 0 auto;
+}
+#content .flimg .caption p { /*kirby has strange padding*/
+margin-bottom: 5px;
+}
+.flimg .caption img { /*for things like smileys */
+display: inline-block;
+}
+.flimg {
+margin: 0 auto 5px auto;
+}
+.flimg_left {
+float:left;
+margin: 0 10px 2px 0;
+}
+.flimg_right {
+float:right;
+margin: 0 0 2px 10px;
+}
+.flimg .caption, .flimg_left .caption, .flimg_right .caption, .flimg_caption {
+font-size: 0.7em;
+line-height: 1.3em;
+margin-top: 0px;
+padding: 0 2ex;
+clear: both;
+}
+
+/* mouseover controllers */
+#content ul.controller {
+	margin: 0;
+	display: block;
+	font-size: 0.7em;
+	line-height: 1.3em;
+	margin-top: 0px;
+}
+#content ul.controller li {
+	display: inline;
+}
+#content ul.controller li a {
+	display: block;
+	float: left;
+	padding: 2px 5px;
+	border: 1px solid #999;
+}
+#content ul.controller li .selected {
+	color: #fff;
+	background: #000;
+}
+
+/* Changed san-serif used to Optima.
+
+Also changed titling of entry content and serif font to Baskerville. Because Jon Tan is the bomb*/
+
+.entry-content > p:first-child:first-line {
+font-variant:small-caps;
+text-indent:0;
+}
+/* I don't use H2 (seems illogical) so I need to resort H3 and H4 */
+.entry-content h3 {
+font-family: Optima, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: bold;
+font-style: normal;
+}
+.entry-content h4 {
+font-style: italic;
+margin: 0 0 12px;
+font-size: 110%;
+}
+
+.Obama { background: #66f; }
+.McCain { background: #f66; }
