@@ -1,17 +1,17 @@
 /*   
-Theme Name: Terry 2K11
+Theme Name: Terry 2K14
 Theme URI: http://terrychay.com/
-Description: The theme for the Woodwork. As usual, I always start with the default theme of WordPress, in this case, Kirby (now TwentyTen).
+Description: The theme for the Woodwork. As usual, I always start with the default theme of WordPress, in this case, TwentyFourteen
 Author: terry chay
 Author URI: http://terrychay.com/
-Template: twentyeleven
-Version: 0.3
+Template: twentyfourteen
+Version: 0.4
 Tags: black, blue, white, two-columns, fixed-width, custom-header, theme-options
 , threaded-comments, sticky-post, translation-ready, microformats, rtl-language-
 support
 */
 
-@import url('../twentyeleven/style.css');
+@import url('../twentyfourteen/style.css');
 
 /* This is in honor of my designer friends and for my friends who say they actually like reading my commentary */
 .commentary {
