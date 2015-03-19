@@ -1,5 +1,5 @@
 /*   
-Theme Name: Terry 2K12
+Theme Name: Terry 2K15
 Theme URI: http://terrychay.com/
 Description: The theme for the Woodwork. As usual, I always start with a default
   theme of WordPress, in this case, TwentyFifteen (Skipped TwentyFourteen and
@@ -11,11 +11,11 @@ Version: 0.6
 Tags: black, blue, white, two-columns, fixed-width, custom-header, theme-options
 , threaded-comments, sticky-post, translation-ready, microformats, rtl-language-
 support
+Text Domain: terry-2k15
 */
 
-@import url('../twentyfifteen/style.css');
-
-/* This is in honor of my designer friends and for my friends who say they actually like reading my commentary */
+/* This is in honor of my designer friends and for my friends who say they
+  actually like reading my commentary */
 .commentary {
 /* background: #e0ffea; /* minty! */
 background: #f0fffa; /* minty! */
