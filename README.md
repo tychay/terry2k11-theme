@@ -1,4 +1,4 @@
-terry2k14-theme
+terry2k15-theme
 ===============
 
-WordPress theme for TerryChay.com based on TwentyFourteen
+WordPress theme for TerryChay.com based on TwentyFifteen (previously TwentyEleven and TwentyTwelve)
