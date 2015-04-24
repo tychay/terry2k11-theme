@@ -14,6 +14,23 @@ support
 Text Domain: terry-2k15
 */
 
+/* Fix GistPress Spacing in TwentyFifteen */
+.gist .line-numbers {
+	/* width: 4em;  */
+}
+.gist .file-data {
+	overflow: auto;
+}
+.file-data table {
+	table-layout: auto;
+}
+
+/* Debugging console has too much space */
+#debug-menu-targets p {
+	margin-bottom: .4em;
+}
+/* OUDATED CONTROLS */
+
 /* This is in honor of my designer friends and for my friends who say they
   actually like reading my commentary */
 .commentary {
