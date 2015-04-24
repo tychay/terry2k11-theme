@@ -7,3 +7,6 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
+// add picturefill cdn support
+add_filter( 'picturefill_wp_use_cdn', '__return_true' );
