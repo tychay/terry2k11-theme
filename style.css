@@ -14,6 +14,11 @@ support
 Text Domain: terry-2k15
 */
 
+/* Not sure why TwentyFifteen doesn't wrap the more link */
+.entry-content .more-link {
+	white-space: normal;
+}
+
 /* Fix GistPress Spacing in TwentyFifteen */
 .gist .line-numbers {
 	/* width: 4em;  */
@@ -29,7 +34,8 @@ Text Domain: terry-2k15
 #debug-menu-targets p {
 	margin-bottom: .4em;
 }
-/* OUDATED CONTROLS */
+
+/* OUTDATED CONTROLS */
 
 /* This is in honor of my designer friends and for my friends who say they
   actually like reading my commentary */
