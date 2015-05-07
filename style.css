@@ -42,6 +42,10 @@ Text Domain: terry-2k15
 }
 /* This is in honor of my designer friends and for my friends who say they
   actually like reading my commentary */
+a.commentary {
+	/* hyperlinks have a very strong underline border already */
+    background-color:rgba(83,162,137,0.15);
+}
 .commentary, [rel="tooltip commentary"] {
 	/* background: #e0ffea; /* minty! 
 	background: #f0fffa; /* minty! */
