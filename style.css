@@ -37,7 +37,7 @@ Text Domain: terry-2k15
 
 /* Tooltip styling */
 [rel~="tooltip"] {
-    cusor: pointer;
+    cursor: pointer;
     border-bottom: 1px dashed #ccc;
 }
 /* This is in honor of my designer friends and for my friends who say they
@@ -51,6 +51,7 @@ a.commentary {
 	background: #f0fffa; /* minty! */
     /* minty = f0fffa  = 240, 255, 250 ~ avg(248) -9, +7 +2  (oscillate around 125*2 */
     /* background-color:rgba(83,162,137,0.15); */
+    cursor: pointer;
     border-bottom: 1px dashed rgba(83,162,137,0.5);
 }
 #tooltip {
