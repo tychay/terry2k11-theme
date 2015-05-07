@@ -52,7 +52,7 @@ a.commentary {
     /* minty = f0fffa  = 240, 255, 250 ~ avg(248) -9, +7 +2  (oscillate around 125*2 */
     /* background-color:rgba(83,162,137,0.15); */
     cursor: pointer;
-    border-bottom: 1px dashed rgba(83,162,137,0.5);
+    border-bottom: 1px dashed rgba(83,162,137,0.8);
 }
 #tooltip {
     font-size: 0.875em;
