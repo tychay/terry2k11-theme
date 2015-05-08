@@ -56,7 +56,6 @@ a.commentary {
 }
 #tooltip {
     font-size: 0.875em;
-    text-align: center;
     text-shadow: 0 1px rgba( 0, 0, 0, .5 );
     line-height: 1.5;
     color: #fff;
