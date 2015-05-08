@@ -15,7 +15,30 @@ if ( function_exists( 'fml_register_sizes' ) ) {
 		array( 'medium', 'Medium')
 	);
 }
+
 // add picturefill cdn support
 add_filter( 'picturefill_wp_use_cdn', '__return_true' );
-// eliminate commentary's default stylesheet
+
+
+// Eliminate commentary's default stylesheet
 add_filter( 'tccomment_add_default_css', '__return_false' );
+// A fancier built-in tooltip (with gradients and such)
+/*
+function you_already_know($ignore) {
+	return 'fancy.css';
+}
+add_filter( 'tccomment_default_css', 'you_already_know' );
+*/
+// Support the [tooltip] shortcode
+//add_filter( 'tccomment_add_tooltip_shortcode', '__return_true');
+
+
+
+
+
+
+
+
+
+
+
