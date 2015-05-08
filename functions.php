@@ -8,7 +8,19 @@ function theme_enqueue_styles() {
     );
 }
 
+/*
+ * Flickr Media Library (+ Picturefill)
+ */
+// picturefill CDN support
+add_filter( 'picturefill_wp_use_cdn', '__return_true' );
+
+// Register picturefill sizes that match theme breakpoints
 if ( function_exists( 'fml_register_sizes' ) ) {
+	fml_register_sizes(
+		'2015-post-thumbnail-size',
+		'(max-width:38.75em) 100vw, (max-width: 59.6875em) 84.6154vw, 58.82355vw',
+		array( 'post-thumbnail')
+	);
 	/*
 	fml_register_sizes(
 		'theme-medium-sizes',
@@ -18,10 +30,10 @@ if ( function_exists( 'fml_register_sizes' ) ) {
 	*/
 }
 
-// add picturefill cdn support
-add_filter( 'picturefill_wp_use_cdn', '__return_true' );
 
-
+/*
+ * TCCommentary
+ */
 // Eliminate commentary's default stylesheet
 add_filter( 'tccomment_add_default_css', '__return_false' );
 // A fancier built-in tooltip (with gradients and such)
