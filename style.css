@@ -19,6 +19,11 @@ Text Domain: terry-2k15
 	white-space: normal;
 }
 
+/* flickr should be in flickr font (or as close as possible) */
+.trademark.flickr  {
+    font-family: Frutiger, 'Frutiger Linotype', Istok, Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
 /* Fix GistPress Spacing in TwentyFifteen */
 .gist .line-numbers {
 	/* width: 4em;  */
