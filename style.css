@@ -19,11 +19,36 @@ Text Domain: terry-2k15
 	white-space: normal;
 }
 
+/* position attribution caption on post-thumbnails in article */
+.fml-post-thumbnail-caption {
+    position: relative;
+}
+.fml-post-thumbnail-caption figcaption.wp-caption-text {
+    position: absolute;
+    z-index: 5; /* in case we have picturefill and it re-injects the image */
+    bottom: 0;
+    right: 0;
+    padding: 5px 2px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+}
+.fml-post-thumbnail-caption a {
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+}
+.fml-post-thumbnail-caption a:hover, .fml-post-thumbnail-caption a:focus{
+    color: #ccc;
+    color: rgba( 255, 255, 255, 0.7);
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.7);
+}
 /* flickr should be in flickr font (or as close as possible) */
 .trademark.flickr  {
     font-family: Frutiger, 'Frutiger Linotype', Istok, Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 800;
 }
+
 /* Fix GistPress Spacing in TwentyFifteen */
 .gist .line-numbers {
 	/* width: 4em;  */
