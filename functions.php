@@ -16,6 +16,10 @@ function theme_enqueue_styles() {
 // picturefill CDN support
 add_filter( 'picturefill_wp_use_cdn', '__return_true' );
 
+// force mimic attachment handling
+add_filter( 'fml_attachment_prepend', '__return_true' );
+add_filter( 'fml_attachment_prepend_remove', '__return_true' );
+
 // Register picturefill sizes that match theme breakpoints
 if ( function_exists( 'fml_register_sizes' ) ) {
 	fml_register_sizes(
