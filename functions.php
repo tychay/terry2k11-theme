@@ -36,6 +36,37 @@ if ( function_exists( 'fml_register_sizes' ) ) {
 	*/
 }
 
+/*
+ * Fix more link text
+ *
+ * Basically remove the arrow, and make sure "Continue reading " is there as well as my habit of saying
+ * after the jump. (unless link is bare, in which case, pass it on through)
+ */
+function terry2k_more_link( $more_link_element, $more_link_text ) {
+	$post = get_post();
+	$link = get_permalink();
+	if ( strpos( $more_link_text, 'Continue reading <span') !== 0 ) {
+		// strip the arrow since css rule applies it
+		if ( mb_substr($more_link_text, -1) == '→' ) {
+			$more_link_text = mb_substr( $more_link_text, 0, -1 );
+		}
+		// Add Continue reading about…
+		if ( strpos($more_link_text, 'Continue reading about ') !== 0 ) {
+			$more_link_text = 'Continue reading about '.$more_link_text;
+		}
+		// Add …after the jump
+		if ( !strpos( $more_link_text, ' after the jump' ) ) {
+			$more_link_text = $more_link_text . ' after the jump';
+		}
+	}
+	return sprintf(
+		'<a href="%s#more-%d" class="more-link">%s</a>',
+		esc_attr( $link ),
+		$post->ID,
+		$more_link_text
+		);
+}
+add_filter( 'the_content_more_link', 'terry2k_more_link', 10, 2 );
 
 /*
  * TCCommentary
