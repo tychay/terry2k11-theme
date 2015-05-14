@@ -51,7 +51,7 @@ function terry2k_more_link( $more_link_element, $more_link_text ) {
 			$more_link_text = mb_substr( $more_link_text, 0, -1 );
 		}
 		// Add Continue reading about…
-		if ( strpos($more_link_text, 'Continue reading about ') !== 0 ) {
+		if ( strpos($more_link_text, 'Continue reading') !== 0 ) {
 			$more_link_text = 'Continue reading about '.$more_link_text;
 		}
 		// Add …after the jump
